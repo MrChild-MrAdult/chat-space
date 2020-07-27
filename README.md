@@ -12,6 +12,7 @@
 - has_many :users_groups
 
 
+
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
