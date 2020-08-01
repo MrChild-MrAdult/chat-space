@@ -1,0 +1,14 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      .top-items__name masa
+      .top-items__icons
+        .icons__btn
+        = link_to "#", class: "icons__btn--edit" do
+          = icon('far', 'edit', class: "icons__btn--icon")
+        = link_to "#", class: "icons__btn--cog" do
+          = icon('fas', 'cog', class: "icons__btn--icon")
+  .side-bar__group-list
+    .chat-list
+      .chat-list__group-name techcamp
+      .chat-list__latest-message まだメッセージがありません
