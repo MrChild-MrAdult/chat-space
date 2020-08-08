@@ -12,7 +12,8 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .chat-list
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .chat-list__group-name
             = group.name
-          .chat-list__latest-message まだメッセージがありません
+          .chat-list__latest-message
+            = group.show_last_message
