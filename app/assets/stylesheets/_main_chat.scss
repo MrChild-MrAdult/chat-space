@@ -53,6 +53,7 @@
     .contents {
       padding: 35px 0 0 40px;
       height: 100%;
+      overflow: scroll;
       .member-info {
         display: flex;
         justify-content: flex-start;
