@@ -54,7 +54,7 @@ $(function(){
       $('.contents').append(html);      
       $('form')[0].reset(); //投稿後、入力値をリセットする
       $('.contents').animate({scrollTop: $('.contents')[0].scrollHeight}); //投稿後、一番下まで自動スクロール
-      $('.form-box__btn').attr('disabled', false);　   //submitボタンを連続で押せるようにする
+      $('.form-box__btn').prop('disabled', false);　   //submitボタンを連続で押せるようにする
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
