@@ -14,8 +14,7 @@
         Edit
 
   .chat-main__message-list
-    .contents
-      = render @messages
+    = render @messages
 
   .chat-main__message-form
     = form_with model: [@group, @message], html: {class: "form-box"}, local: true do |f|
