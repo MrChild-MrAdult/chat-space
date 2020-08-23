@@ -1,10 +1,11 @@
-.member-info
-  .member-info__name
-    = message.user.name
-  .member-info__date
-    = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-.message-content
-  - if message.comment.present?
-    %p.lower-message__content
-      = message.comment
-  = image_tag message.image.url, class: 'message__image' if message.image.present?
+.contents{data: {message: {id: message.id}}}
+  .member-info
+    .member-info__name
+      = message.user.name
+    .member-info__date
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .message-content
+    - if message.comment.present?
+      %p.lower-message__content
+        = message.comment
+    = image_tag message.image.url, class: 'message__image' if message.image.present?
