@@ -32,3 +32,9 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
+
+# bundle install
+# bundle exec cap production deploy
+
+# rm -rf Gemfile.lock
+# bundle exec cap production deploy
